@@ -1,0 +1,8 @@
+C:\Users\Oracle\Desktop\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\bin\Debug\DAL.dll
+C:\Users\Oracle\Desktop\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\bin\Debug\DAL.pdb
+C:\Users\Oracle\Desktop\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\obj\Debug\DAL.dll
+C:\Users\Oracle\Desktop\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\obj\Debug\DAL.pdb
+D:\2016 July 1\App\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\bin\Debug\DAL.dll
+D:\2016 July 1\App\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\bin\Debug\DAL.pdb
+D:\2016 July 1\App\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\obj\Debug\DAL.dll
+D:\2016 July 1\App\Articles\Software Architecture\Architecture Style\Communication - SOA\Web Service\SOAWebService\DAL\obj\Debug\DAL.pdb

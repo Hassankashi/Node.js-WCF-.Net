@@ -1,0 +1,47 @@
+﻿<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script src="http://localhost:8080/server.js"></script>
+<script src="/server.js"></script>
+<script>
+    var socket = io.connect();
+
+    socket.on('message', function (data) {
+        $('#conversation').append('</br>' + data.message);
+     });
+   
+  
+    $(document).ready(function () {
+        $('#send').click(function () {
+          
+            $.ajax({
+                type: "GET", //GET or POST or PUT or DELETE verb
+                url: "http://localhost:28448/MyService.svc/GetCustomer", // Location of the service
+                //data: Data, //Data sent to server
+                contentType: "application/json; charset=utf-8", // content type sent to server
+                dataType: "text", //Expected data format from server
+                processdata: true, //True or False
+                success: function (msg) {//On Successfull service call
+                    var obj = JSON.parse(msg);
+                    var t = obj.d.length;
+                  
+                    var completeMsg="";
+                    for (var i = 0; i < t; i++) {
+                        completeMsg = completeMsg + "  " + obj.d[i].Name;
+                    }
+                    alert(completeMsg);
+                    socket.emit('client_data', { 'name': completeMsg });
+                   
+                }
+                 
+            });
+
+         })
+    });
+
+</script>
+
+<input id="text" />
+<button id="send">send</button>
+<div id="conversation">This is our conversation</div>
